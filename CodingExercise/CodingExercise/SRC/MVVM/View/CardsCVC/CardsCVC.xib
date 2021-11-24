@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CardsCVC" id="hTd-T0-gLZ" customClass="CardsCVC" customModule="CodingExercise" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="411" height="226"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="icz-u5-mzD">
+                <rect key="frame" x="0.0" y="0.0" width="411" height="226"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="sMB-sT-891">
+                        <rect key="frame" x="0.0" y="0.0" width="411" height="164.5"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="sMB-sT-891" secondAttribute="height" multiplier="400:160" id="Eow-Vm-cRj"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PrV-UA-lba">
+                        <rect key="frame" x="10" y="174.5" width="391" height="41.5"/>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="PrV-UA-lba" firstAttribute="top" secondItem="sMB-sT-891" secondAttribute="bottom" constant="10" id="Asm-cd-bWJ"/>
+                    <constraint firstItem="sMB-sT-891" firstAttribute="width" secondItem="icz-u5-mzD" secondAttribute="width" id="WCG-1O-fHg"/>
+                    <constraint firstItem="PrV-UA-lba" firstAttribute="leading" secondItem="icz-u5-mzD" secondAttribute="leading" constant="10" id="cM4-fn-7ZX"/>
+                    <constraint firstAttribute="trailing" secondItem="sMB-sT-891" secondAttribute="trailing" id="fGV-Bf-Yfz"/>
+                    <constraint firstAttribute="bottom" secondItem="PrV-UA-lba" secondAttribute="bottom" constant="10" id="ijX-cM-Dfi"/>
+                    <constraint firstAttribute="trailing" secondItem="PrV-UA-lba" secondAttribute="trailing" constant="10" id="nmP-sA-kal"/>
+                    <constraint firstItem="sMB-sT-891" firstAttribute="leading" secondItem="icz-u5-mzD" secondAttribute="leading" id="vzx-KV-eU2"/>
+                    <constraint firstItem="sMB-sT-891" firstAttribute="top" secondItem="icz-u5-mzD" secondAttribute="top" id="ytq-MH-82O"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <size key="customSize" width="411" height="226"/>
+            <connections>
+                <outlet property="imgView" destination="sMB-sT-891" id="nbm-hw-fcp"/>
+                <outlet property="lbTitle" destination="PrV-UA-lba" id="fVu-sv-dBh"/>
+            </connections>
+            <point key="canvasLocation" x="49" y="-43"/>
+        </collectionViewCell>
+    </objects>
+</document>
